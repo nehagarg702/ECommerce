@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#d3d3d3"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:id="@+id/thumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="7dip"
+            android:padding="2dip" >
+
+            <ImageView
+                android:id="@+id/list_image"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                app:srcCompat="@mipmap/ic_launcher" />
+        </LinearLayout>
+
+        <!-- Title Of Song -->
+
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:text="Pineapple"
+            android:textColor="#040404"
+            android:textSize="20dp"
+            android:fontFamily="@font/aclonica"
+            android:typeface="sans" />
+
+        <LinearLayout
+            android:id="@+id/cart_plus_minus_layout"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="55dip"
+            android:layout_marginTop="0dp"
+            android:layout_height="25dip"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/name"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="0.23"
+                android:paddingRight="5dip"
+                android:text="Rs. 200"
+                android:fontFamily="@font/atma_medium"
+                android:textColor="#1d1d1d"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/cart_minus_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_minus" />
+
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:text="10"
+                android:textSize="12dip"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/cart_plus_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_plus" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_above="@+id/cart_plus_minus_layout"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="17dp"
+            android:layout_marginBottom="-5dip"
+            app:srcCompat="@drawable/dele" />
+    </RelativeLayout>
+
+</LinearLayout>

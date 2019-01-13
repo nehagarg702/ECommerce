@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Search">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                app:srcCompat="@drawable/back" />
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="270dp"
+                android:hint="Enter Product Name"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_height="fill_parent"
+                android:inputType="textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/search" />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_search" />
+
+</android.support.design.widget.CoordinatorLayout>
